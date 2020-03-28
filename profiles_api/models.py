@@ -57,7 +57,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
         return self.email
 
 
-class PrfileFeedItem(models.Model):
+class ProfileFeedItem(models.Model):
     """Profile status update"""
     user_profile = models.ForeignKey(
         settings.AUTH_USER_MODEL,
